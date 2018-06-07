@@ -22,7 +22,9 @@ repositories {
     maven { url 'https://jitpack.io' } //library directly from GitHub source-code
 }
 
-
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
 
 
 

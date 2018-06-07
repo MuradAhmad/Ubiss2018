@@ -1,27 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTheme"
     tools:context="com.androidapps.muradahmad.calmify.MainActivity">
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorTheme"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
 
-  <!--  <TextView
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        android:layout_height="50dp"
+        android:text="Here's your recommended session"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+
+        />
 
 
+</LinearLayout>
+
+
+
+<!--
 <Button
+    android:id="@+id/session"
     android:layout_width="170dp"
-    android:layout_height="32dp"
-    android:text="Meditate Now"/>
+    android:layout_height="50dp"
+    android:text="session Setting"/>
+
+-->
+<LinearLayout
+    android:id="@+id/LinearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="75dp"
+
+    android:layout_margin="5dp"
+    android:layout_marginTop="5dp"
+
+    >
+
+  <ExpandableListView
+      android:id="@+id/lvExpandable"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+
+      />
 
 
 
 
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true">
+
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Back"
+            android:textStyle="normal"
+            android:background="#FFA500"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Start"
+            android:textColor="@color/colorWhite"
+            android:textStyle="normal"
+            android:background="@color/colorBlack"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
